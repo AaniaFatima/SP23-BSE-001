@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 0; */
+}
+
+body{
+    font-family: Khaadi, Arial, Helvetica neue !important;
+    background-color: #f9f9f9;
+    line-height: 1.4;
+    overflow-y: hidden;
+}
+.header-promotion{
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    height: 31px;
+}
+.header-banner{
+    text-align: center;
+    color: black;
+    background-color: #f2633b;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    padding: 7px 0 11px;
+    width: 100%;
+}
+p{
+    display: inline;
+    font-size: 11px;
+}
+.track-order-section{
+    margin-top: 8px;
+    position: absolute;
+    right: 20px;
+    z-index: 99;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.track-order{
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #2d2b2a;
+    text-decoration: none;
+    font-family: Khaddi, Arial, Helvetica neue;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    padding: 0px 16px;
+    text-align: centers;
+}
+.track-order:hover{
+    text-decoration: underline;
+}
+
+.nav-row{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    position: relative;
+    font-family: Khaddi, Arial, Helvetica neue;
+    padding: 16px 20px;
+    margin-bottom: 8px;
+}
+.navbar-header-brand{
+    display: flex;
+    justify-content: flex-start; 
+    flex: 15%;
+    position: inherit;
+    text-align: left; 
+}
+
+.home-logo{
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    height: 39.75px;
+    width: 65px;
+    padding-left: 20px;
+}
+
+.menu-items{
+    list-style: none;
+    display: flex;
+    /* margin-right: 270px; */
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.menu-names{
+    text-decoration: none;
+    color: #2d2b2a;
+    font-size: 12px;
+    font-weight: 549px;
+    padding: 0 9px;
+}
+.menu-div{
+    display: flex;
+    justify-content: center;
+    flex: 70%;
+    
+}
+.icons-side-bar{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex: 15%;
+    align-items: center;
+}
+
+.icon{
+    height: 16px;
+    width: 16px;
+    margin-right: 16px;
+    align-items: center;
+}
+
+/* MAIN */
+
+.banner-container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.banner-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .slider-nav{
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    column-gap: 1rem;
+}
+.slider-nav a:hover{
+    flex-grow: 2;
+} */
+
+/* FOOTER */
+.footer{
+   width: 100%;
+   height: 100%;
+}
+.services{
+    display: flex;
+    background: rgba(255, 180, 131, .08);
+    margin-top: 32px;
+    padding: 20px 0;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 0;
+}
+.serv-type a{
+    text-decoration: none;
+    color: #2d2b2a;
+    font-size: 16px;
+    /* font-weight: 700; */
+    font-family: Khaadi, Arial, helvetica neue !important;
+    line-height: 24px;
+}
+
+.serv-icon{
+    height: 24px;
+    width: 24px;
+    margin-right: 16px ;
+}
+
+.help-info-section{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #dcdbdb;
+    border-top: 1px solid #dcdbdb;
+    padding: 20px;
+    font-weight: 549px;
+    margin-bottom: 20px;
+    padding: 16px 0;
+}
+.help-icon{
+    height: 24px;
+    width: 24px;
+    margin-right: 16px ;
+}
+.social-info{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 24px 0;
+    border-bottom: 1px solid #ddd;
+}
+.social-images{
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+
+}
+.social-info li{
+    margin-bottom: 6px;
+}
+/* .headings{
+    margin-bottom: 14px;
+} */
+
+.copyright{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+.copyright .khaadi-logo-again{
+    display: flex;
+    padding-right: 0;
+    margin-right: 0;
+    justify-content: end;
+}

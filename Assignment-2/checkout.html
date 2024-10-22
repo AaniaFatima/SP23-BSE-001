@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khaadi|Checkout Form</title>
+  <link rel="icon" type="image/x-icon" href="images/khaadi.ico" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/khaadi-B.css">
+  <style>
+    /* Custom styles for the checkout form */
+    body {
+      font-family: Khaadi, Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .checkout-container {
+      margin-top: 40px;
+    }
+    .form-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-heading {
+      color: #fd6500;
+      margin-bottom: 20px;
+    }
+    .btn-checkout {
+      background-color: #28a745;
+      color: white;
+      border-radius: 12px;
+    }
+    .cart-summary {
+      padding: 20px;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      height: 100%;
+    }
+    .fixed-top >.container-fluid>.hover-underline{
+      display: inline-block;
+    }
+    .fixed-top >.container-fluid>.hover-underline:hover{
+      text-decoration: underline;
+    }
+
+    }
+  </style>
+</head>
+<body style="background-color: rgb(228, 220, 220);">
+  <header>
+    <nav class="fixed-top">
+    <div class="container-fluid text-center" style="background-color:  #f2633b; height: 34px; padding: 7px 0px 11px; font-size: 12px;;">
+        <p class="mb-0">
+          Shop up to 50% OFF on your favourite summer styles from our End of
+          Season Sale
+          <a href="sale.html" class="text-dark"><u><strong>now</strong></u></a>
+          <a href="#" class="float-end pe-5 text-dark hover-underline" style="text-decoration: none; font-size: 12px;">TRACK</a>
+        </p>
+      </div>
+      <div class="container-fluid d-flex justify-content-between align-items-center" style="padding: 16px 20px; background-color: #fff;">
+        <a href="C:\Users\HP\Desktop\WEB TECH\LAB-Assignment-1\khaadi-B.html" class="navbar-brand">
+          <img src="images/logocopy.png" alt="Khaadi" height="43.75px" width="70px" style="margin-left: 10px;"/>
+        </a>
+        <div class="d-none d-md-flex gap-3" style="font-size: 15.2px;">
+          <a href="#" class="fw-bold" style="text-decoration: none; color: #Fd6500;">SALE</a>
+          <a href="#" class="text-dark" style="text-decoration: none; ">NEW IN</a>
+          <a href="#" class="text-dark fw-bold" style="text-decoration: none; ">#INSTAKHAADI</a>
+          <a href="#" class="text-dark" style="text-decoration: none; ">FABRICS</a>
+          <a href="#" class="text-dark" style="text-decoration: none;"> READY TO WEAR</a>
+          <a href="#" class="text-dark" style="text-decoration: none; ">FRAGRANCES</a>
+          <a href="#" class="text-dark" style="text-decoration: none;">HOME</a>
+        </div>
+        <div class="d-flex gap-3">
+          <a href="#"><img src="images/magnifying-glass-solid.svg" height="16" alt="Search" /></a>
+          <a href="#"><img src="images/heart-regular.svg" height="16" alt="Wishlist" /></a>
+          <a href="#"><img src="images/user-regular.svg" height="16" alt="Account" /></a>
+          <a href="#"><img src="images/bag-shopping-solid.svg" height="16" alt="Cart" /></a>
+        </div>
+      </div>
+    </nav>
+</header>
+
+<!-- MAIN -->
+<div class="container-fluid checkout-fluid" style="background-color: rgb(228, 220, 220); margin-top: 110px; margin-bottom: 30px;">
+<div class="container checkout-container " ">
+  <h2 class="text-center form-heading">Checkout Form</h2>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="form-container">
+        <form id="checkoutForm" class="needs-validation" novalidate>
+          <!-- Billing Address Section -->
+          <h4>Billing Address</h4>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your full name" required>
+              <div class="invalid-feedback">Full Name is required.</div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="abcd@google.com" required>
+              <div class="invalid-feedback">Valid Email is required.</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">Please enter your shipping address.</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="city" class="form-label">City</label>
+              <input type="text" class="form-control" id="city" placeholder="City" required>
+              <div class="invalid-feedback">City is required.</div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="state" class="form-label">State</label>
+              <input type="text" class="form-control" id="state" placeholder="State" required>
+              <div class="invalid-feedback">State is required.</div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="Zip" required>
+              <div class="invalid-feedback">Zip code is required.</div>
+            </div>
+          </div>
+
+          <!-- Payment Section -->
+          <h4>Payment</h4>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="cardName" class="form-label">Name on Card</label>
+              <input type="text" class="form-control" id="cardName" placeholder="Name on card" required>
+              <div class="invalid-feedback">Name on card is required.</div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cardNumber" class="form-label">Credit card number</label>
+              <input type="text" class="form-control" id="cardNumber" placeholder="1111-2222-3333-4444" required>
+              <div class="invalid-feedback">Credit card number is required.</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="expMonth" class="form-label">Exp Month</label>
+              <input type="text" class="form-control" id="expMonth" placeholder="MM" required>
+              <div class="invalid-feedback">Expiration month is required.</div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="expYear" class="form-label">Exp Year</label>
+              <input type="text" class="form-control" id="expYear" placeholder="YY" required>
+              <div class="invalid-feedback">Expiration year is required.</div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="123" required>
+              <div class="invalid-feedback">Security code is required.</div>
+            </div>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="form-check mb-4">
+            <input type="checkbox" class="form-check-input" id="sameAsBilling">
+            <label class="form-check-label" for="sameAsBilling">Shipping address same as billing</label>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-checkout btn-block">Continue to checkout</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Cart Summary Section -->
+    <div class="col-md-4">
+      <div class="cart-summary">
+        <h4>Khaadi-Shopping Cart</h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>Item 1</div>
+            <span>Rs.1050</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>Item 2</div>
+            <span>Rs.950</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>Item 3</div>
+            <span>Rs.1000</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>Item 4</div>
+            <span>Rs.500</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total</span>
+            <strong>Rs.3500</strong>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Footer -->        
+<footer class="bg-light mt pt" style="width: 100%; height: 100%;">
+  <!-- First Row: Shipping Charges, Crafted with Care, Find Stores -->
+  <hr class="mt-0 pt-0">  
+  <div class="container-fluid mt-1 pt-1">
+      <div class="row text-center">
+          <div class="col-md-4 ">
+              <p><i class="bi bi-truck text-danger me-2 fs-4"></i>SHIPPING CHARGES</p>
+              <p class="ms-1">Starting from Rs. 120</p>
+          </div>
+          <div class="col-md-4 ">
+              <p><i class="bi bi-heart text-danger me-2 fs-4"></i>CRAFTED WITH CARE</p>
+              <p class="ms-3">Curated with you in mind.</p>
+          </div>
+          <div class="col-md-4 ">
+              <p><i class="bi bi-geo-alt text-danger me-2 fs-4"></i>FIND STORES</p>
+              <p class="ms-1">Stores countrywide across Pakistan, UK, UAE, US.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Divider -->
+  <hr class="m-0 p-0">
+
+  <!-- Second Row: Need Help, Phone Number, Email Us -->
+  <div class="container-fluid">
+      <div class="row text-center py-3">
+          <div class="col-md-4">
+              <p>NEED HELP?</p>
+          </div>
+          <div class="col-md-4">
+              <p><i class="bi bi-telephone"></i> 0800 74007</p>
+          </div>
+          <div class="col-md-4">
+              <p><i class="bi bi-envelope"></i> EMAIL US</p>
+          </div>
+      </div>
+  </div>
+
+  <hr class="m-0 p-0">
+  <!-- Third Row: Help, Customer Support, More from Khaadi, Our Socials -->
+  <div class="container-fluid">
+      <div class="row text-center py-3">
+          <div class="col-md-3">
+              <p><strong>HELP</strong></p>
+              <ul class="list-unstyled">
+                  <li>Track Your Order</li>
+                  <li>Terms & Conditions</li>
+                  <li>Privacy Policy</li>
+              </ul>
+          </div>
+          <div class="col-md-3">
+              <p><strong>CUSTOMER SUPPORT</strong></p>
+              <ul class="list-unstyled">
+                  <li>Customer Service</li>
+                  <li>Store Locator</li>
+                  <li>Disclaimer</li>
+                  <li>Delivery</li>
+                  <li>Exchange</li>
+                  <li>FAQs</li>
+              </ul>
+          </div>
+          <div class="col-md-3">
+              <p><strong>MORE FROM KHAADI</strong></p>
+              <ul class="list-unstyled">
+                  <li>About Us</li>
+                  <li>Blogs</li>
+              </ul>
+          </div>
+          <div class="col-md-3">
+              <p><strong>OUR SOCIALS</strong></p>
+              <ul class="list-unstyled">
+                  <img src="images/tiktok.png" alt="tiktok" width="25" class="mx-1" >
+                  <img src="images/youtube.png" alt="youtube" width="25" class="mx-1" >
+                  <img src="images/facebook (1).png" alt="facebook" width="25"  class="mx-1">
+                  <img src="images/instagram (1).png" alt="instagram" width="25"  class="mx-1">
+                  <li>
+                    <div class="row">
+                      <div class="col">
+                        <p class="fw-bold text-start mb-1" >Get the latest news</p>
+                        <div class="form-floating mb-3" style="display: inline-block; background-color: inherit;">
+                          <input style="color: rgb(120, 115, 115); background-color: inherit; outline: none; box-shadow: none;" type="email" class="form-control border-0" id="floatingInput" placeholder="name@example.com">
+                          <label style="color: rgb(120, 115, 115);" for="floatingInput">Email address</label>
+                        </div>
+                        <button style="border-radius: 0.75rem;" type="button" class="btn btn-dark fw-bold">Confirm</button>
+                        <hr class="m-0 p-0">
+                      </div>
+                    </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <hr class="m-0 p-0 ">
+  <!-- Fourth Row: 100% Safe Checkout, Secured by, Images, Copyright -->
+  <div class="container-fluid">
+    <div class="row text-center py-3" style="font-size: 14px; color: rgb(120, 115, 115);">
+        <div class="col-md-3">
+          <p class="mb-0">100% Safe Checkout</p>
+          <img src="images/visa image.svg" alt="Visa" width="92.89px" height="40px">
+        </div>
+        <div class="col-md-3">
+          <p class="mb-0">Secured by</p>
+          <img src="images/secure image.gif" alt="GoDaddy" width="100" >
+        </div>
+        <div class="col-md-3">
+          <img class="mb-1" src="images/KhaadiLogo-22.png" alt="Khaadi" width="100" height="100">
+        </div>
+        <div class="col-md-3" >
+          <p style="font-size: 12px; text-align: left;">&copy; 2024 Weaves Corporation Limited (Formerly Khaadi Corporation Limited). All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+  
+</footer>
+
+
+<script>
+  // JavaScript for form validation
+  (function () {
+    "use strict";
+    const form = document.getElementById("checkoutForm");
+    form.addEventListener("submit", function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add("was-validated");
+    });
+  })();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
