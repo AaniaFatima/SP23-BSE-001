@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-4 bg-dark text-white p-4">
+                <div class="text-center profile-pic-container">
+                    <img src="profile-pic.jpg" alt="Profile Picture" class=" profile-pic img-fluid rounded-circle mb-3" style="width: 200px; height: 200px;">
+                    <div class="profile-info">
+                        <p>Aania Fatima<br>Sales Manager<br>Contact: JosephFavreau@gmail.com</p>
+                    </div>
+                    <hr>
+                    <!-- <h3 class="name">Aania Fatima</h3>
+                    <p class="position">Sales Manager</p> -->
+                </div>
+                <div class="contact-info mt-4">
+                    <h4 class="fw-bold">CONTACT</h4>
+                    <p><i class="bi bi-house-fill me-3"></i>Address:<br> 15, boulevard Admiral Courbet, 69600 OULLINS</p>
+                    <p><i class="bi bi-telephone-fill me-3"></i>Phone:<br> 04854335365</p>
+                    <p><i class="bi bi-envelope-paper me-3"></i>Email:<br> JosephFavreau@gmail.com</p>
+                </div>
+                <div class="skills mt-4">
+                    <h4 class="fw-bold">SKILLS</h4>
+                    <ul>
+                        <li>Sales management</li>
+                        <li>Business development</li>
+                        <li>Commercial negotiation</li>
+                        <li>Key account management</li>
+                        <li>Leadership and team management</li>
+                        <li>Customer service</li>
+                        <li>Market analysis</li>
+                        <li>Sales forecast</li>
+                    </ul>
+                </div>
+                <div class="languages mt-4 ">
+                    <h4 class="fw-bold">LANGUAGES</h4>
+                    <p>French <br> English (Level B2)</p>
+                
+                </LI>
+                </div>
+                <div class="hobbies mt-4">
+                    <h4 class="fw-bold">HOBBIES</h4>
+                    <ul>
+                        <li>Soccer</li>
+                        <li>Car race</li>
+                        <li>Camping</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="col-md-8 bg-light p-4">
+                <div class="text-start">
+                    <!-- <img src="profile-picture.jpg" alt="Profile Picture" class="img-fluid rounded-circle mb-3" style="width: 150px;"> -->
+                    <h3 class="name mb-0 fs-1">Aania Fatima</h3>
+                    <p class="position mb-5">Sales Manager</p>
+                </div>
+                <h3 class="profile-title" style="line-height: 1rem; color: rgb(30, 30, 50); font-weight: 549;">PROFILE</h3>
+                <p style="line-height: 1.2rem;">Dynamic sales manager with more than X years of experience in sales and team management. Strong business development, negotiation, and key account management skills. Proven ability to achieve sales targets and significantly increase revenue. Results-oriented, motivated, and focused on customer satisfaction.</p>
+
+                <h5 class="experience-title fw-bold" style="line-height: 1rem; color: rgb(30, 30, 50); font-weight: 500;">PROFESSIONAL EXPERIENCE</h5>
+                <hr class="line-bold">
+                <div class="experience">
+                    <h3>Sales Manager, Company ABC, City, Country</h3>
+                    <p>January 20XX - Present</p>
+                    <ul>
+                        <li>Lead a team of X sales reps.</li>
+                        <li>Develop and implement sales strategies to meet and exceed monthly and annual sales targets.</li>
+                        <li>Build strong relationships with existing customers and key accounts.</li>
+                        <li>Negotiate contracts and agreements with clients.</li>
+                        <li>Prepare sales reports, performance analysis.</li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <h3>Sales Representative, Company XYZ, City, Country</h3>
+                    <p>January 20XX - December 20XX</p>
+                    <ul>
+                        <li>Manage a portfolio of clients and develop new business relationships.</li>
+                        <li>Present products and services to potential customers.</li>
+                        <li>Negotiate terms of sale and conclude contracts successfully.</li>
+                        <li>Collaborate with internal teams to ensure customer satisfaction and resolve any issues.</li>
+                        <li>Achieve and exceed assigned sales targets.</li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <h3>Sales Representative, Company XYZ, City, Country</h3>
+                    <p>January 20XX - December 20XX</p>
+                    <ul>
+                        <li>Manage a portfolio of clients and develop new business relationships.</li>
+                        <li>Present products and services to potential customers.</li>
+                        <li>Negotiate terms of sale and conclude contracts successfully.</li>
+                        <li>Negotiate terms of sale and conclude contracts successfully.</li>
+                    </ul>
+                </div>
+
+                <h3 class="education-title fw-bold">Education</h3>
+                <div class="education">
+                    <hr class="line-bold">
+                    <h3>Bachelor of Business Administration, XYZ University, City, Country</h3>
+                    <p>Year of graduation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const profilePic = document.querySelector('.profile-pic');
+            const profileInfo = document.querySelector('.profile-info');
+
+            profilePic.addEventListener('mouseenter', function() {
+                profileInfo.style.display = 'block'; // Show the info box
+            });
+
+            profilePic.addEventListener('mouseleave', function() {
+                profileInfo.style.display = 'none'; // Hide the info box
+            });
+        });
+    </script>
+</body>
+</html>
