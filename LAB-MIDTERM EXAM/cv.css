@@ -63,3 +63,27 @@ img {
     margin-bottom: 10px;
     color: #555;
 }
+
+.profile-info {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position to stay in the corner */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    z-index: 10;
+}
+
+.profile-pic-container {
+    position: relative;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
