@@ -1,0 +1,93 @@
+<header>
+    <!--login sign up modal pop up-->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+          <div><h1>Welcome</h1></div>
+          <div><h3 style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;font-weight:200; color: rgb(120, 118, 118);">Sign in to your account</h3></div>
+          <div class="tab-header">
+              <button class="tab-link active" id="loginTab">Login</button>
+              <button class="tab-link" id="signupTab">Signup</button>
+          </div>
+          <div class="tab-body" id="loginForm">
+              <h2>Login</h2>
+              <form method="post" action="/login">
+                  <input type="email" id="loginEmail" placeholder="Email Address" required>
+                  <input type="password" id="loginPassword" placeholder="Password" required>
+                  <a href="#" class="forgot-password">Forgot password?</a>
+                  <button type="submit" class="primary-btn">Login</button>
+              </form>
+          </div>
+          <div class="tab-body" id="signupForm" style="display: none;">
+              <h2>Signup</h2>
+              <form>
+                  <input type="email" placeholder="Email Address" required>
+                  <input type="password" placeholder="Password" required>
+                  <input type="password" placeholder="Confirm Password" required>
+                  <div class="form-group">
+                    <select name="Role" style="width: 378.3px; height: 40px; margin: 10px 0px; " required>
+                        <option value="" disabled selected>Select User Type</option>
+                        <option value="employer">Customer</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <div class="error" id="signUpRoleError"></div>
+                </div>
+                  <button type="submit" class="primary-btn" style="margin-top: 20px ;">Signup</button>
+              </form>
+          </div>
+      </div>
+  </div>
+  
+    
+    <div class="header-promotion">
+      <div class="header-banner">
+        <p>
+          Shop up to 50% OFF on your favourite summer styles from our End of
+          Season Sale
+          <a href="sale.html"
+            ><strong style="color: black"><u>now</u></strong></a
+          >
+        </p>
+      </div>
+      <div class="track-order-section">
+        <a href="#" class="track-order">Track</a>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="navbar-header-brand">
+        <a href="#" class="home-logo" title="khaadi Home"
+          ><img src="images/logocopy.png" alt="Khaadi"
+        /></a>
+      </div>
+      <div class="menu-div">
+        <li class="menu-items">
+          <a href="#" style="color: #fd6500" class="menu-names">SALE</a>
+          <a href="/placeOrder" class="menu-names">NEW IN</a>
+          <a href="#" class="menu-names" style="font-weight: bold">
+            #INSTAKHAADI</a
+          >
+          <a href="#" class="menu-names">FABRICS</a>
+          <a href="#" class="menu-names">READY TO WEAR</a>
+          <a href="#" class="menu-names">FRAGRANCES</a>
+          <a href="/" class="menu-names">HOME</a>
+        </li>
+      </div>
+      <!-- <div class="icons-side-bar"> -->
+      <li class="icons-side-bar">
+        <a href="#" class="icon"
+          ><img src="images/magnifying-glass-solid.svg" alt=""
+        /></a>
+        <a href="#" class="icon"
+          ><img src="images/heart-regular.svg" alt=""
+        /></a>
+        <a href="#" class="icon" id="userIcon"
+          ><img src="images/user-regular.svg" alt="User Icon"
+        /></a>
+        <a href="#" class="icon"
+          ><img src="images/bag-shopping-solid.svg" alt=""
+        /></a>
+      </li>
+      <!-- </div> -->
+    </div>
+  </header>
+
