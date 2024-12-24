@@ -1,0 +1,175 @@
+<body>
+    <header>
+      <!--login sign up modal pop up-->
+      <div id="loginModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div><h1>Welcome</h1></div>
+            <div><h3 style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;font-weight:200; color: rgb(120, 118, 118);">Sign in to your account</h3></div>
+            <div class="tab-header">
+                <button class="tab-link active" id="loginTab">Login</button>
+                <button class="tab-link" id="signupTab">Signup</button>
+            </div>
+            <div class="tab-body" id="loginForm">
+                <h2>Login</h2>
+                <form>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="password" placeholder="Password" required>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                    <button type="submit" class="primary-btn">Login</button>
+                </form>
+            </div>
+            <div class="tab-body" id="signupForm" style="display: none;">
+                <h2>Signup</h2>
+                <form>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <div class="form-group">
+                      <select name="Role" style="width: 378.3px; height: 40px; margin: 10px 0px; " required>
+                          <option value="" disabled selected>Select User Type</option>
+                          <option value="employer">Customer</option>
+                          <option value="admin">Admin</option>
+                      </select>
+                      <div class="error" id="signUpRoleError"></div>
+                  </div>
+                    <button type="submit" class="primary-btn" style="margin-top: 20px ;">Signup</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+      
+      <div class="header-promotion">
+        <div class="header-banner">
+          <p>
+            Shop up to 50% OFF on your favourite summer styles from our End of
+            Season Sale
+            <a href="sale.html"
+              ><strong style="color: black"><u>now</u></strong></a
+            >
+          </p>
+        </div>
+        <div class="track-order-section">
+          <a href="#" class="track-order">Track</a>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <div class="navbar-header-brand">
+          <a href="#" class="home-logo" title="khaadi Home"
+            ><img src="images/logocopy.png" alt="Khaadi"
+          /></a>
+        </div>
+        <div class="menu-div">
+          <li class="menu-items">
+            <a href="#" style="color: #fd6500" class="menu-names">SALE</a>
+            <a href="#" class="menu-names">NEW IN</a>
+            <a href="#" class="menu-names" style="font-weight: bold">
+              #INSTAKHAADI</a
+            >
+            <a href="#" class="menu-names">FABRICS</a>
+            <a href="#" class="menu-names">READY TO WEAR</a>
+            <a href="#" class="menu-names">FRAGRANCES</a>
+            <a href="#" class="menu-names">HOME</a>
+          </li>
+        </div>
+        <!-- <div class="icons-side-bar"> -->
+        <li class="icons-side-bar">
+          <a href="#" class="icon"
+            ><img src="images/magnifying-glass-solid.svg" alt=""
+          /></a>
+          <a href="#" class="icon"
+            ><img src="images/heart-regular.svg" alt=""
+          /></a>
+          <a href="#" class="icon" id="userIcon"
+            ><img src="images/user-regular.svg" alt="User Icon"
+          /></a>
+          <a href="#" class="icon"
+            ><img src="images/bag-shopping-solid.svg" alt=""
+          /></a>
+        </li>
+        <!-- </div> -->
+      </div>
+    </header>
+
+    <!-- NOW MAIN SECTION -->
+     <Main>
+      <div class="Banners">
+        <div class="banner-container">
+          <img class="banner-section" id="slide1" src="images/Khaadi-sale.webp" alt="Khaadi Sale">
+          <img class="banner-section" id="slide2" src="images/winter-collection.webp" alt="Winter Collection">
+          <img class="banner-section" id="slide3" src="images/winter-hues.webp" alt="Winter Hues">
+            <div class="banner-section">
+            <div class="footer">
+              <div class="services">
+                <li class="serv-type"><img class="serv-icon" src="images/truck.png" alt=""><a href="#"><b>SHIPPING CHARGES</b><br> &nbsp Starting from Rs.120</a></li>
+                <li class="serv-type"><img class="serv-icon" src="images/heart.png" alt=""><B>CRAFTED WITH CARE</B><br>&nbsp Curated with you in mind.</li>
+                <li class="serv-type"><img class="serv-icon" src="images/location.png" alt=""><b>FIND STORES</b><br>&nbsp Storescountrywide across Pakistan, UK, UAE, US.</li>
+              </div>
+              
+              <div class="help-info-section">
+              <li>NEED HELP?</li>
+              <li ><img class="help-icon" src="images/telephone.png" alt="">0800 74007</li>
+              <li><img class="help-icon" src="images/mail.png" alt="">EMAIL US</li>
+              </div>
+            
+              <div class="social-info">
+                 <div class="help">
+                  <li style="margin-bottom: 14px;"><b>HELP</b></li>
+                  <li>Track Your Order</li>
+                  <li>Terms & Conditions</li>
+                  <li>Privacy Policy</li>
+                 </div> 
+                 <div class="customer-support">
+                  <li style="margin-bottom: 14px;"><b>CUSTOMER SUPPORT</b></li>
+                  <li>Customer Service</li>
+                  <li>Store Locator</li>
+                  <li>Disclaimer</li>
+                  <li>Delivery</li>
+                  <li>Exchange</li>
+                  <li>FAQs</li>
+                 </div>   
+                 <div class="morefromkhaadi">
+                  <li style="margin-bottom: 14px;"><b>MORE FROM KHAADI</b></li>
+                  <li>About Us</li>
+                  <li>Blogs</li>
+                 </div>
+                <div class="our-socials">
+                  <li style="margin-bottom: 14px;"><b>OUR SOCIALS</b></li>
+                  <li><img class="social-images" src="images/tiktok.png" alt=""><img class="social-images" src="images/youtube.png" alt=""><img href="#" class="social-images" src="images/facebook (1).png" alt=""><img href="#" class="social-images" src="images/instagram (1).png" alt="">
+                  <li>GET THE LATEST NEWS</li>
+                  <input type="text" placeholder="Email Address">
+                  <button style="background-color: black; color: white; border-radius: 9.5rem;">CONFIRM</button>
+                </div>
+              </div>
+           
+              <div class="copyright">
+                <div class="visa">
+                  <li style="color: rgb(120, 115, 115); margin-bottom: 10px;">100% Safe Checkout</li>
+                  <li><img style="height: 38px;" src="images/visa image.svg" alt=""></li>
+                </div>
+                <div class="security">
+                  <li style="color: rgb(120, 115, 115); margin-bottom: 8px;">Secured by</li>
+                  <li><img src="images/secure image.gif" alt=""></li>
+                </div>
+                <div class="khaadi-logo-again">
+                  <img style="height: 28px;" src="images\logocopy.png" alt="">
+                </div>
+                <div class="copyright-reserved">
+                  <p style="color: rgb(120, 115, 115);">Copyright © 2024 Weaves Corporation Limited (Formerly Khaadi Corporation Limited). All Rights Reserved.</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            
+        </div>
+        <!-- <div class="slider-nav">
+          <a href="#slide1"></a>
+          <a href="#slide2"></a>
+          <a href="#slide3"></a>
+        </div> -->
+      </div>
+     </Main>
+
+     <!-- <script src="/public/js/khaadi.js"></script> -->
+  </body>
